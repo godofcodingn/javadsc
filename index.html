@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Java code</h1>
+        <h1></h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>1.Add Two Insteger</h2>
+            
+            <li>import java.util.Scanner;<br>
+
+                public class SumOfNumbers2 {<br>
+                    public static void main(String args[]) {<br>
+                        int x, y, sum;<br>
+                        Scanner sc = new Scanner(System.in);<br>
+                        System.out.print("Enter the first number: ");<br>
+                        x = sc.nextInt();<br>
+                        System.out.print("Enter the second number: ");<br>
+                        y = sc.nextInt();<br>
+                        sum = sum(x, y);<br>
+                        System.out.println("The sum of two numbers x and y is: " + sum);<br>
+                    }<br>
+                
+                    public static int sum(int a, int b) {<br>
+                        int sum = a + b;<br>
+                        return sum;<br>
+                    }<br>
+                }<br></li>
+        </section>
+
+        <section>
+            <h2>2.single dimensional array</h2>
+            <li>class Testarray {<br>
+                public static void main(String args[]) {<br>
+                    int a[] = new int[5];<br>
+                    a[0] = 10;<br>
+                    a[1] = 20;<br>
+                    a[2] = 70;<br>
+                    a[3] = 40;<br>
+                    a[4] = 50;<br>
+                    for (int i = 0; i < a.length; i++)<br>
+                        System.out.println(a[i]);<br>
+                }<br>
+            }</li>
+        </section>
+        <section>
+            <h2>3.Prime Number</h2>
+            <li>public class PrimeExample2 {<br>
+                static void checkPrime(int n) {<br>
+                  int i, m = 0, flag = 0;<br>
+                  m = n / 2;<br>
+                  if (n == 0 || n == 1) {<br>
+                    System.out.println(n + " is not prime number");<br>
+                  } else {<br>
+                    for (i = 2; i <= m; i++) {<br>
+                      if (n % i == 0) {<br>
+                        System.out.println(n + " is not prime number");<br>
+                        flag = 1;<br>
+                        break;<br>
+                      }<br>
+                    }<br>
+                    if (flag == 0) {<br>
+                      System.out.println(n + " is prime number");<br>
+                    }<br>
+                  } <br>
+                }<br>
+              
+                public static void main(String args[]) {<br>
+                  checkPrime(1);<br>
+                  checkPrime(3);<br>
+                  checkPrime(17);<br>
+                  checkPrime(20);<br>
+                  }<br>
+            }<br></li>
+        </section>
+        
+        <section>
+            <h2>4.Sum of N Numbers</h2>
+            <li>import java.io.*;<br>
+
+                class SUM {<br>
+                    public static void main(String[] args) {<br>
+                        int N = 10;<br>
+                        int sum = 0;<br>
+                        System.out.print("First " + N + " Numbers = ");<br>
+                        for (int i = 1; i <= N; i++) {<br>
+                            System.out.print(i + " ");<br>
+                            sum += i;<br>
+                        }<br>
+                        System.out.println();<br>
+                        System.out.println("Sum of first " + N<br>
+                                + " Natural Number = " + sum);<br>
+                    }<br>
+                    }
+                </li>
+        </section>
+        <section>
+            <h2>5.instance variables and methods of a class </h2><br>
+            <li>import java.io.*;<br>
+
+                class c {<br>
+                    public String geek;<br>
+                    public int i;<br>
+                    public Integer I;<br>
+                
+                    public c() {<br>
+                        this.geek = "Shubham Jain";<br>
+                    }<br>
+                
+                    public static void main(String[] args) {<br>
+                        c name = new c();<br>
+                        System.out.println("mr name is: " + name.geek);<br>
+                        System.out.println("Default value for int is "<br>
+                                + name.i);<br>
+                        System.out.println("Default value for Integer is "<br>
+                                + name.I);<br>
+                    }<br>
+                }<br>
+                <br></li>
+        </section>
+        <section>
+            <h2>6. FUNCTION OVERLOADING </h2>
+            <li><br>
+                class Demo {<br>
+                    void sum(int l, long b) {<br>
+                        System.out.println("Sum is" + (l + b));<br>
+                    }<br>
+                
+                    void sum(int l, int b, int h) {<br>
+                        System.out.println("Sum is" + (l + b + h));<br>
+                    }<br>
+                
+                    public static void main(String[] args) {<br>
+                        Demo ar = new Demo();<br>
+                        ar.sum(8, 5);<br>
+                    }<br>
+                }<br>
+            </li>
+        </section>
+        <section>
+            <h2>7.PUBLIC AND PRIVATE ACCESS MODIFIER.</h2>
+            <li>
+                import java.io.*;<br>
+                import java.util.*;<br>
+                
+                public class A {<br>
+                
+                    public void m1() {<br>
+                        System.out.println("java");<br>
+                    }<br>
+                }<br>
+                
+                class B {<br>
+                    public static void main(String[] args) {<br>
+                        A a = new A();<br>
+                
+                        a.m1();<br>
+                    }<br>
+                }<br></li>
+            </li>
+        </section>
+        <section>
+            <h2>8.BOXING AND UN-BOXING</h2>
+            <li>import java.io.*;<br>
+
+                class run {<br>
+                
+                    public static void main(String[] args) {<br>
+                        Integer i = new Integer(10);<br>
+                
+                        int i1 = i;<br>
+                
+                        System.out.println("Value of i:" + i);<br>
+                        System.out.println("Value of i1: " + i1);<br>
+                        Character gfg = 'a';<br>
+                        char ch = gfg;<br>
+                        System.out.println("Value of ch: " + ch);<br>
+                        System.out.println(" Value of gfg: " + gfg);<br>
+                    }<br>
+                }<br>
+                <br></li>
+                <section>
+                    <h2>9.FILE OPERATION</h2>
+                    <li>import java.io.FileReader;<br>
+                        import java.io.FileWriter;<br>
+                        import java.io.IOException;<br>
+                        
+                        class GFG {<br>
+                        
+                            public static void main(String[] args) {<br>
+                                try {<br>
+                        
+                                    FileReader fr = new FileReader("gfgInput.txt");<br>
+                        
+                                    FileWriter fw = new FileWriter("gfgOutput.txt");<br>
+                        
+                                    String str = "";<br>
+                        
+                                    int i;<br>
+                                    while ((i = fr.read()) != -1) {<br>
+                                        str += (char) i;<br>
+                                    }<br>
+                        
+                                    System.out.println(str);<br>
+                        
+                                    fw.write(str);<br>
+                        
+                                    fr.close();<br>
+                                    fw.close();<br>
+                        
+                                    System.out.println("File reading and writing both done");<br>
+                                }<br>
+                        
+                                catch (IOException e) {<br>
+                        
+                                    System.out.println(<br>
+                                            "There are some IOException");<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                        </li>
+                </section>
+        </section>
+        <section>
+            <h2>10.FIBONACCI SERIES</h2>
+            <li>import java.util.Scanner;<br>
+
+                public class FibSeries {<br>
+                    public static void main(String[] args) {<br>
+                        int FibLength;<br>
+                        Scanner sc = new Scanner(System.in);<br>
+                        System.out.print("Please enter length: ");<br>
+                        FibLength = sc.nextInt();<br>
+                        int[] num = new int[FibLength];<br>
+                        num[0] = 0;<br>
+                        num[1] = 1;<br>
+                        for (int i = 2; i < FibLength; i++) {<br>
+                            num[i] = num[i - 1] + num[i - 2];<br>
+                        }<br>
+                        System.out.println("Fibonacci Series: ");<br>
+                        for (int i = 0; i < FibLength; i++) {<br>
+                            System.out.print(num[i] + " ");<br>
+                        }<br>
+                    }<br>
+                }<br></li>
+        </section>
+        <section>
+            <h2>11.PACKAGES</h2>
+            <li>
+                import java.io.*;<br>
+                import java.util.*;<br>
+                
+                public class A {<br>
+                
+                    public void m1() {<br>
+                        System.out.println("java");<br>
+                    }<br>
+                }<br>
+                
+                class B {<br>
+                    public static void main(String[] args) {<br>
+                        A a = new A();<br>
+                
+                        a.m1();<br>
+                    }<br>
+                }<br>
+                </li>
+        </section>
+        <section>
+            <h2>12.EXCEPTION HANDLING</h2>
+            <li>import java.util.Scanner;<br>
+            
+
+                public class man {<br>
+                
+                    public static double man(double a, double b) throws ArithmeticException {<br>
+                        if (b == 0) {<br>
+                            throw new ArithmeticException(" by zero is not allowed");<br>
+                        }<br>
+                        return a / b;<br>
+                    }<br>
+                
+                    public static void main(String[] args) {<br>
+                        Scanner scanner = new Scanner(System.in);<br>
+                
+                        System.out.print("Enter the numerator (a): ");<br>
+                        double a = scanner.nextDouble();<br>
+                
+                        System.out.print("Enter the denominator (b): ");<br>
+                        double b = scanner.nextDouble();<br>
+                
+                        try {<br>
+                            double divisionResult = man(a, b);<br>
+                            System.out.println("The result of " + a + " divided by " + b + " is: " + divisionResult);<br>
+                        } catch (ArithmeticException e) {<br>
+                            System.out.println("Error: " + e.getMessage());<br>
+                        } finally {<br>
+                            scanner.close();<br>
+                        }<br>
+                    }<br>
+                }<br>
+                <br></li>
+        </section>
+        <section>
+            <h2>13. THREAD PRIORITY</h2>
+            <li>class TestMultiPriority1 extends Thread {<br>
+                public void run() {<br>
+                    System.out.println("running thread name is:" + Thread.currentThread().getName());<br>
+                    System.out.println("running thread priority is:" + Thread.currentThread().getPriority());<br>
+            
+                }<br>
+            
+                public static void main(String args[]) {<br>
+                    TestMultiPriority1 m1 = new TestMultiPriority1();<br>
+                    TestMultiPriority1 m2 = new TestMultiPriority1();<br>
+                    m1.setPriority(Thread.MIN_PRIORITY);<br>
+                    m2.setPriority(Thread.MAX_PRIORITY);<br>
+                    m1.start();<br>
+                    m2.start();<br>
+            
+                }<br>
+            }<br>
+            </li>
+        </section>
+        <section>
+            <h2>14.APPLET WINDOW</h2>
+            <li>import java.awt.Frame;<br>
+
+                public class CreateFrameWindowExample extends Frame {<br>
+                    CreateFrameWindowExample(String title) {<br>
+                        super();<br>
+                        this.setTitle(title);<br>
+                        this.setVisible(true);<br>
+                    }<br>
+                
+                    public static void main(String args[]) {<br>
+                        CreateFrameWindowExample window = new CreateFrameWindowExample("Create Window Example");<br>
+                    }<br>
+                }<br>
+                </li>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; ........VANAKAM DA MAPLA.....</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
